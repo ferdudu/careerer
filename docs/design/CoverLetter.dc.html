@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cover letter — Deji Ojo</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&amp;family=Geist:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 816px; height: 1056px; box-sizing: border-box; padding: 46px 66px 48px; background: {{paper}}; color: {{ink}}; font-family: 'Geist', Arial, sans-serif; font-size: 14px; line-height: 1.64; display: flex; flex-direction: column; gap: 32px">
+
+  <header style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">
+    <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, Georgia, serif; font-weight: 400; font-size: 42px; line-height: 1; letter-spacing: 0.04em; color: {{ink}}">Deji Ojo</h1>
+    <div style="display: flex; align-items: center; gap: 14px; width: 100%">
+      <span aria-hidden="true" style="flex: 1; height: 1px; background: {{hair}}"></span>
+      <span aria-hidden="true" style="width: 5px; height: 5px; transform: rotate(45deg); background: {{gold}}"></span>
+      <span style="font-size: 11.5px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: {{gold}}">Salesforce Developer</span>
+      <span aria-hidden="true" style="width: 5px; height: 5px; transform: rotate(45deg); background: {{gold}}"></span>
+      <span aria-hidden="true" style="flex: 1; height: 1px; background: {{hair}}"></span>
+    </div>
+    <div style="font-size: 12.3px; letter-spacing: 0.02em; color: {{muted}}">Burnaby, BC · deji2109@gmail.com · linkedin.com/in/deji-ojo · github.com/Dei-Gee</div>
+  </header>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: flex-end; padding-bottom: 14px; border-bottom: 1px solid {{rule}}">
+    <div style="display: flex; flex-direction: column; gap: 2px">
+      <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: {{gold}}">Re: Salesforce Developer</div>
+      <div style="color: {{muted}}">Hiring Team, Halcyon Health</div>
+    </div>
+    <div style="font-size: 12px; letter-spacing: 0.06em; color: {{date}}">November 22, 2026</div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0">Dear Hiring Team,</p>
+    <p style="margin: 0">Halcyon Health is looking for a Salesforce Developer who can build in Apex, SOQL and Lightning Web Components and work close to the people who use the platform every day. That is the work I have done for the past four years, and [one specific detail from the posting or company] is why this role stands out to me.</p>
+    <p style="margin: 0">At Traction Complete I built customer-facing features for a Salesforce AppExchange product. I refactored SOQL queries to support lazy loading so large searches stopped stalling, built visual editing for Assignment Flows that contributed to a 10% increase in customer retention, and shipped time-zone support for teams routing work across regions. When something broke for a customer, I joined the live session, found the cause and deployed the hotfix directly to their production org.</p>
+    <p style="margin: 0">Before that, I built REST APIs, React dashboards and PHP data tools that pulled messy sources — relational databases, supplier CSV files and eight storefronts — into one reliable view, and cut double-booked inventory by 50%. I like turning slow, tangled systems into tools people trust.</p>
+    <p style="margin: 0">I would welcome the chance to talk about how I could help your team. Thank you for your time.</p>
+    <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 10px">
+      <div>Sincerely,</div>
+      <div style="font-family: 'Bodoni Moda', Didot, Georgia, serif; font-size: 24px; letter-spacing: 0.03em; color: {{soft}}">Deji Ojo</div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"page":{"editor":"enum","options":["midnight","daylight"],"default":"midnight"},"$preview":{"width":816,"height":1056}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const day = (this.props.page ?? 'midnight') === 'daylight';
+    return day
+      ? { paper: '#FFFFFF', ink: '#0F1A33', soft: '#0A1430', muted: '#4A5470', gold: '#8C6A2C', date: '#5B4B92', rule: '#E2E4EA', hair: '#CDAE72' }
+      : { paper: '#0A0E18', ink: '#E9E5DB', soft: '#F3EEE2', muted: '#9AA0B1', gold: '#CDAE72', date: '#B0A2DA', rule: '#242A3A', hair: '#6E5D3C' };
+  }
+}
+</script>
+</body>
+</html>

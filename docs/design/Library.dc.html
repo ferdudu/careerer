@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Library</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+<style>
+body{margin:0;background:#0D0D0C}
+a{color:#D2B27A;text-decoration:none}a:hover{color:#E6CC9C}
+.nav{display:flex;align-items:center;gap:12px;min-height:44px;padding:0 12px;border-radius:8px;color:#A19D93;font-size:14px;transition:background .2s ease,color .2s ease}
+.nav:hover{background:#1A1A17;color:#ECE9E2}
+.nav.on{background:#1C1C19;color:#ECE9E2}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 20px;border-radius:10px;background:#D2B27A;color:#141412;font-weight:500;font-size:14px;transition:background .2s ease}
+.btn:hover{background:#E0C48F;color:#141412}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:500;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.12em;color:#8F8B81;padding:0 16px 12px;border-bottom:1px solid #22211E;white-space:nowrap}
+td{padding:0 16px;height:60px;border-bottom:1px solid #1C1B18;color:#ECE9E2;white-space:nowrap}
+tbody tr{transition:background .2s ease}
+tbody tr:hover{background:#141413}
+.muted{color:#8F8B81}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:13px}
+.dot{width:6px;height:6px;border-radius:3px;display:inline-block}
+.file{display:inline-flex;align-items:center;min-height:30px;padding:0 10px;border-radius:6px;border:1px solid #2A2925;font-size:12px;color:#ECE9E2;font-family:'Geist Mono',monospace}
+.file:hover{border-color:#4A4840;color:#ECE9E2}
+input::placeholder{color:#7F7B72}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 800px; background: #0D0D0C; color: #ECE9E2; font-family: 'Geist', system-ui, sans-serif">
+
+  <nav aria-label="Main" style="flex: 1 1 232px; max-width: 100%; box-sizing: border-box; padding: 28px 16px; background: #111110; border-right: 1px solid #22211E; display: flex; flex-direction: column; gap: 32px">
+    <div style="padding: 0 12px; font-family: 'Instrument Serif', serif; font-size: 28px; letter-spacing: 0.01em">Tailor</div>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <a class="nav" href="Main.dc.html"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>New application</a>
+      <a class="nav on" href="Library.dc.html" aria-current="page"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"></path></svg>Library</a>
+      <a class="nav" href="Profile.dc.html"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c1.2-3.5 3.8-5 7-5s5.8 1.5 7 5"></path></svg>Profile</a>
+    </div>
+    <div style="margin-top: auto; padding: 14px 12px; border-top: 1px solid #22211E; display: flex; flex-direction: column; gap: 4px">
+      <div style="font-size: 13px; color: #ECE9E2">Deji Ojo</div>
+      <div style="font-size: 12px; color: #8F8B81">Software Developer</div>
+    </div>
+  </nav>
+
+  <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 56px clamp(20px, 5vw, 80px); display: flex; flex-direction: column; gap: 32px">
+    <header style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #8F8B81">LIBRARY</div>
+        <h1 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 48px; line-height: 1.05">Applications</h1>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+        <label for="search" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search applications</label>
+        <input id="search" type="search" placeholder="Search role or company" style="width: 260px; max-width: 100%; min-height: 44px; box-sizing: border-box; padding: 0 14px; border-radius: 10px; border: 1px solid #2E2D29; background: #141413; color: #ECE9E2; font: inherit; font-size: 14px; outline: none">
+        <a class="btn" href="Main.dc.html">New application</a>
+      </div>
+    </header>
+
+    <div style="overflow-x: auto">
+      <table>
+        <thead><tr><th scope="col">ROLE</th><th scope="col">COMPANY</th><th scope="col">CREATED</th><th scope="col">COVERAGE</th><th scope="col">STATUS</th><th scope="col">FILES</th></tr></thead>
+        <tbody>
+          <tr><td><a href="Review.dc.html" style="color: #ECE9E2">Salesforce Developer</a></td><td class="muted">Halcyon Health</td><td class="muted">Nov 22</td><td>11 / 14</td><td><span class="tag"><span class="dot" style="background: #8F8B81"></span>Draft</span></td><td><a class="file" href="Review.dc.html">Review</a></td></tr>
+          <tr><td><a href="Review.dc.html" style="color: #ECE9E2">Full-stack Developer, React / PHP</a></td><td class="muted">Brightline Commerce</td><td class="muted">Nov 18</td><td>12 / 13</td><td><span class="tag"><span class="dot" style="background: #9CC3A4"></span>Exported</span></td><td style="display: flex; gap: 6px; align-items: center"><a class="file" href="#resume">Resume.pdf</a><a class="file" href="#letter">Letter.pdf</a></td></tr>
+          <tr><td><a href="Review.dc.html" style="color: #ECE9E2">Front-end Developer</a></td><td class="muted">Larch &amp; Co.</td><td class="muted">Nov 12</td><td>9 / 12</td><td><span class="tag"><span class="dot" style="background: #9CC3A4"></span>Exported</span></td><td style="display: flex; gap: 6px; align-items: center"><a class="file" href="#resume">Resume.pdf</a><a class="file" href="#letter">Letter.pdf</a></td></tr>
+          <tr><td><a href="Review.dc.html" style="color: #ECE9E2">Salesforce Engineer II</a></td><td class="muted">Fernway Logistics</td><td class="muted">Nov 4</td><td>10 / 15</td><td><span class="tag"><span class="dot" style="background: #D2B27A"></span>Applied</span></td><td style="display: flex; gap: 6px; align-items: center"><a class="file" href="#resume">Resume.pdf</a><a class="file" href="#letter">Letter.pdf</a></td></tr>
+          <tr><td><a href="Review.dc.html" style="color: #ECE9E2">PHP / Laravel Developer</a></td><td class="muted">Quarry Studio</td><td class="muted">Oct 29</td><td>11 / 11</td><td><span class="tag"><span class="dot" style="background: #D2B27A"></span>Applied</span></td><td style="display: flex; gap: 6px; align-items: center"><a class="file" href="#resume">Resume.pdf</a><a class="file" href="#letter">Letter.pdf</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

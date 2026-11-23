@@ -1,0 +1,19 @@
+appId: com.careerer.app
+productName: Careerer
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**
+  - package.json
+extraResources:
+  - from: resources/ats-research-report.md
+    to: ats-research-report.md
+asar: true
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

@@ -1,0 +1,48 @@
+Deji Ojo
+Software Developer — Salesforce · React · PHP
+Burnaby, BC · deji2109@gmail.com · linkedin.com/in/deji-ojo · github.com/Dei-Gee · [portfolio link]
+
+Summary
+Full-stack developer with 4+ years building production features in Salesforce (Apex, SOQL, LWC), React and PHP. Shipped customer-facing features for a Salesforce AppExchange product, built inventory and analytics systems on the BigCommerce API, and worked directly with customers to resolve urgent production issues. Strong at turning messy data and slow queries into fast, usable tools.
+
+Technical Skills
+Salesforce: Apex, SOQL, Lightning Web Components (LWC), customer org deployments
+Front end: JavaScript, React, HTML/CSS, CreateJS
+Back end: PHP, Laravel, Node.js (LoopBack), REST APIs, SQL / relational databases
+Platforms & tools: Git, BigCommerce API, FTP/CSV data pipelines, [3D tools, e.g. Blender / Unity]
+
+Experience
+Product Developer — Traction Complete, Vancouver, BC (Remote) Jan 2022 – Dec 2023
+- Used CreateJS to give users more control over their Assignment Flows [describe: e.g. visual editing of routing steps] and contributing to a 10% increase in customer retention.
+- Designed and shipped time-zone support so admins and managers could schedule and route work across global teams [add: number of customers or users].
+- Refactored SOQL queries to support lazy loading, cutting wait times on large searches from [X sec] to [Y sec].
+- Joined live customer sessions to diagnose critical issues and deployed hotfixes directly to production Salesforce orgs.
+- Worked with design, QA, client success, customer success and marketing teams to build, test and launch new features and redesign existing UI.
+
+Web Developer — Summit Tools, Vancouver, BC Jan 2021 – Dec 2021
+- Built an in-house inventory manager in PHP that cleaned and simplified data from a complex relational database before syncing it to the storefront through the BigCommerce API.
+- Developed an internal REST API and analytics dashboard in React and LoopBack, giving staff [what it let them see or decide, e.g. daily sales and stock levels in one place].
+- Designed the UI for both tools end to end.
+
+Web Developer (Contract) — Checkpoint One Apparel, Vancouver, BC Sep 2019 – Dec 2019
+- Upgraded the inventory management system, cutting double-booked items by 50%.
+- Built an analytics dashboard in React that combined internal databases, supplier CSV files from FTP and 8 BigCommerce storefronts into one view.
+- Maintained and patched legacy PHP systems.
+
+3D Set Designer (Part-time Contract) — NLT Media (Remote) Apr 2024 – Present
+- Sole designer of 3D sets, levels and environments for indie games in active development, using [tools/engines].
+- Member of the story group, contributing ideas on story direction and game mechanics during planning sessions.
+- Beta test builds before release, reporting bugs and gameplay issues to the team.
+- [Optional: number of environments/levels delivered.]
+
+Projects
+ACEA News — MongoDB, Express, React, Node.js · github.com/Dei-Gee/acea-news
+Full-stack MERN news web app; forked by 4 other developers.
+[One line: a feature you built or a technical problem you solved.]
+
+BigCommerce Integration — PHP, BigCommerce API · github.com/Dei-Gee/bigcommerce_integration
+Starter project for managing a BigCommerce store through its API.
+[One line: what it handles, e.g. products, orders or inventory.]
+
+Education
+Diploma in Computing Studies & Information Systems — Douglas College, New Westminster, BC · 2020
