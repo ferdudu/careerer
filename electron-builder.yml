@@ -11,6 +11,7 @@ extraResources:
     to: ats-research-report.md
 asar: true
 win:
+  icon: build/icon.ico
   target:
     - target: nsis
       arch: [x64]
